@@ -1,0 +1,29 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='style.css')
+    script(src='./script2.js' defer)
+  body
+    nav.navbar.navbar-default
+      .container
+        .navbar-header
+          a.navbar-brand(href='formulario')
+    .container
+      #movie
+    h1= "tus pelis favoritas"
+    a(href='formulario')
+    p#title=title
+     span=titulo
+    p#dir
+     span#dir=director
+    p
+     span#genre=genre
+     br
+    p#year
+     span=año
+     br
+    img#imagen(src=Poster)
+    br
+    input(type='submit',id="Btn")   
+    input(type="button", value="Guardar", id="btnFavorito")
+    

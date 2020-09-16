@@ -1,0 +1,28 @@
+
+html
+  head
+  link(rel='stylesheet', href='/style.css')
+  script(src='/script2.js' defer)
+  body
+    h1 formulario
+      a(href='/formulario')
+    form#connection(method='POST' , action='/api/films')
+      label(for='titulo') Titulo
+      input#title(type='text', name='name' ,value=title)
+      br
+      br
+      label(for='director') Director
+      input#dir(type='text', name='name' ,value= dir)
+      br
+      label(for='genre') Genre
+      input#genre(type='text', name='genre',value= genre)
+      br
+      label(for='imagen') imagen
+      br
+      input#imagen(type="text" name=" imagen" value=urlImg)
+      br
+      br
+      button#reset(type="reset") Restablecer
+      input#send(type='submit', value='Submit')
+      input#edit(type= 'button', value='edit')
+      
